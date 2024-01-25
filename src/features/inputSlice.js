@@ -19,10 +19,10 @@ To use a header, prefix your text with a \`#\` followed by a space: \`# This is 
 To format code in Markdown, you can write inline code by wrapping your code in a pair of backticks: \`\`code\`\`
 
 To format code a codeblock, write three backticks at the beginning and end of your codeblock. Your Markdown previewer may support syntax highlighting for different words. For example:
-\`\`\`
-\`\`\`javascript
-console.log("Hello world!");
-\`\`\`
+
+    \`\`\`javascript
+    console.log("Hello world!");
+    \`\`\`
 
 
 > You can get more information by visiting [the Markdown "Getting Started guide"](https://www.markdownguide.org/getting-started/) or check out the [syntax](https://www.markdownguide.org/basic-syntax/)  
