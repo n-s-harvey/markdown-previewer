@@ -12,7 +12,7 @@ You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and
 
 - [x] User Story #2: I can see an element with a corresponding id="preview".
 
-- [ ] User Story #3: When I enter text into the #editor element, the #preview element is updated as I type to display the content of the textarea.
+- [x] User Story #3: When I enter text into the #editor element, the #preview element is updated as I type to display the content of the textarea.
 
 - [ ] User Story #4: When I enter GitHub flavored markdown into the #editor element, the text is rendered as HTML in the #preview element as I type (HINT: You don't need to parse Markdown yourself - you can import the Marked library for this: https://cdnjs.com/libraries/marked).
 
