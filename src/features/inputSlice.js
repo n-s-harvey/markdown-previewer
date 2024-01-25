@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 
 export const input = createSlice({
   name: 'input',
@@ -7,7 +8,7 @@ export const input = createSlice({
   },
   reducers: {
     updateInput: (state, action) => {
-      state.value = action.payload
+      state.value = marked.parse(action.payload);
     }
   }
 })
