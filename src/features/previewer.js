@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux"
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+import Container from 'react-bootstrap/Container';
 
 export default function Previewer() {
   const rawText = useSelector(state => state.input.value);
@@ -10,11 +11,10 @@ export default function Previewer() {
   const innerHTML = { __html: markdownText };
 
   return (
-    <>
-      <p>Preview:</p>
+    <Container>
+      <hr />
       <div id="preview" dangerouslySetInnerHTML={innerHTML}>
-        {/* {parsedMarkdown} */}
       </div>
-    </>
+    </Container>
   )
 }
