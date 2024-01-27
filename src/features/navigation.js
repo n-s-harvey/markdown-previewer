@@ -5,11 +5,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navigation() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="sm" className="bg-body-tertiary" sticky="top">
       <Container>
         <Navbar.Brand href="#home">Markdown Previewer</Navbar.Brand>
-        <Nav.Link href="#editor">Editor</Nav.Link>
-        <Nav.Link href="#previewer">Previewer</Nav.Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#editor">Editor</Nav.Link>
+            <Nav.Link href="#preview">Preview</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
