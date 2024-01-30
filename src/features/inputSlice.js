@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+
 
 export const input = createSlice({
   name: 'input',

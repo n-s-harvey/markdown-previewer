@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux"
-import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+import { marked } from "marked";
 import Container from 'react-bootstrap/Container';
 
 export default function Previewer() {
