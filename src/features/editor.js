@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { updateInput } from './inputSlice';
 
-export default function Editor() {
+export default function Editor(props) {
   const dispatch = useDispatch();
   const handleInputChange = (event) => {
     dispatch(updateInput(event.target.value))
@@ -14,7 +14,7 @@ export default function Editor() {
     <Container id='editor'>
       {/*TODO: update to maximize editor*/}
       <Form>
-        <Form.Control as="textarea" onChange={handleInputChange} defaultValue={sampleMarkdown} />
+        <Form.Control as="textarea" onChange={handleInputChange} defaultValue={sampleMarkdown} className={`${props.expanded ? 'expanded' : ''}`} />
       </Form>
     </Container>
   );
