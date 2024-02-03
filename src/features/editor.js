@@ -19,7 +19,7 @@ export default function Editor() {
   return (
     <Container id='editor'>
       {/*TODO: update to maximize editor*/}
-      <Button variant="outline-primary" size="sm"
+      <Button variant="outline-primary" size="sm" id='expand-button' className='mx-auto mb-1'
         onClick={handleExpandedChange}>
         {isExpanded ? 'Collapse' : 'Expand'}
       </Button>
