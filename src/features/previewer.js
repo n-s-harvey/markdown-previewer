@@ -12,7 +12,6 @@ export default function Previewer() {
 
   return (
     <Container>
-      <hr />
       <div id="preview" dangerouslySetInnerHTML={innerHTML}>
       </div>
     </Container>
